@@ -839,6 +839,9 @@ body {
     border: none;
 }
 
+ input:invalid:not(:placeholder-shown) +.modal-icons {
+    fill: red ;
+ }
 
 /* ---------MODAL MENU----------- */
 

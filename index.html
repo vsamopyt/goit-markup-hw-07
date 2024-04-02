@@ -738,7 +738,12 @@
                 type="text"
                 name="user-name"
                 id="user-name"
+                placeholder=""
                 autofocus
+                required
+                autocomplete="off"
+                pattern="[A-Za-z]{3,}\s[A-Za-z]{3,}"
+                title="Full name consists of 2 words containing at least three Latin letters and no numbers"
               />
               <svg width="18" height="24" class="modal-icons modal-icon-user">
                 <use href="./images/icons.svg#icon-person"></use>
@@ -748,7 +753,7 @@
           <div class="input-wraper">
             <label class="label" for="user-tel">Phone</label>
             <div class="input-icon-wraper">
-              <input class="input" type="tel" name="user-tel" id="user-tel" />
+              <input class="input" type="tel" name="user-tel" id="user-tel" pattern="([+380][0-9]{12})" title ="+380XXXXXXXX phone number should have 12 signs"  autocomplete="off" placeholder="" required />
               <svg width="18" height="24" class="modal-icons modal-icon-user">
                 <use href="./images/icons.svg#icon-phone"></use>
               </svg>
@@ -762,6 +767,11 @@
                 type="email"
                 name="user-email"
                 id="user-email"
+                pattern="[A-Za-z]{@}[A-Za-z]"
+                title="Email contains only Latin letters and @"
+                autocomplete="off"
+                placeholder=""
+                required
               />
               <svg width="18" height="24" class="modal-icons modal-icon-user">
                 <use href="./images/icons.svg#icon-email"></use>
@@ -784,6 +794,7 @@
               name="user-privacy"
               id="user-privacy"
               value="true"
+              required
             />
             <label class="label label-checkbox" for="user-privacy">
               <span class="pseudo-checkbox">
